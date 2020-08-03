@@ -5,11 +5,9 @@ class RingBuffer:
         self.oldest = 0;
 
     def append(self, item):
-        if self.oldest < 5:
-            self.storage[self.oldest] = item
-        else:
+        if self.oldest >= self.capacity:
             self.oldest = 0
-            self.storage[self.oldest] = item
+        self.storage[self.oldest] = item
         self.oldest += 1
 
     def get(self):
