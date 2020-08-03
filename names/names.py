@@ -40,12 +40,12 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 # I think a binary search tree would work too.
 
-bst = BST("init");
-for name in names_2:
-    bst.insert(name)
-for name in names_1:
-    if bst.contains(name):
-        duplicates.append(name)
+# bst = BST("init");
+# for name in names_2:
+#     bst.insert(name)
+# for name in names_1:
+#     if bst.contains(name):
+#         duplicates.append(name)
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
@@ -55,3 +55,6 @@ print (f"runtime: {end_time - start_time} seconds")
 # Python has built-in tools that allow for a very efficient approach to this problem
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
+
+# That set intersection method is very fast!
+# duplicates = [x for x in set(names_1).intersection(set(names_2))]
