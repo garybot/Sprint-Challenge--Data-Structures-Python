@@ -56,5 +56,6 @@ print (f"runtime: {end_time - start_time} seconds")
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
 
-# That set intersection method is very fast!
 # duplicates = [x for x in set(names_1).intersection(set(names_2))]
+# That set intersection method is very fast! 0.0069 seconds!
+# The BST method I used takes about 0.1 seconds.
